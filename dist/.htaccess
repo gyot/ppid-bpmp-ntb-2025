@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /ppid/
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /ppid/index.html [L]

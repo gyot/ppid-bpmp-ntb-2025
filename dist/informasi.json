@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Peraturan Menteri tentang Kurikulum Merdeka",
+    "category": "Peraturan",
+    "year": 2024,
+    "responsible": "Direktorat Kurikulum",
+    "viewUrl": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing",
+    "downloadUrl": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing"
+  },
+  {
+    "id": 2,
+    "title": "SE tentang Implementasi Asesmen Nasional",
+    "category": "SE",
+    "year": 2023,
+    "responsible": "Direktorat Asesmen",
+    "viewUrl": "#",
+    "downloadUrl": "#"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "laporanTahunan": [
+    {
+      "tahun": 2023,
+      "deskripsi": "Laporan komprehensif layanan informasi publik PPID Kemendikdasmen tahun 2023",
+      "file": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing"
+    },
+    {
+      "tahun": 2022,
+      "deskripsi": "Laporan komprehensif layanan informasi publik PPID Kemendikdasmen tahun 2022",
+      "file": "/files/laporan-2022.pdf"
+    },
+    {
+      "tahun": 2021,
+      "deskripsi": "Laporan komprehensif layanan informasi publik PPID Kemendikdasmen tahun 2021",
+      "file": "/files/laporan-2021.pdf"
+    }
+  ],
+  "statistik": {
+    "total": 1523,
+    "selesai": 1487,
+    "proses": 36,
+    "keberatan": 12,
+    "perBulan": [
+      { "bulan": "Januari", "jumlah": 142, "persen": 85 },
+      { "bulan": "Februari", "jumlah": 128, "persen": 78 },
+      { "bulan": "Maret", "jumlah": 156, "persen": 92 },
+      { "bulan": "April", "jumlah": 149, "persen": 88 }
+    ],
+    "kategori": [
+      { "nama": "Data Statistik Pendidikan", "persen": 35 },
+      { "nama": "Regulasi & Kebijakan", "persen": 25 },
+      { "nama": "Anggaran & Keuangan", "persen": 20 },
+      { "nama": "Program & Kegiatan", "persen": 15 },
+      { "nama": "Lainnya", "persen": 5 }
+    ]
+  },
+  "kepuasan": {
+    "total": "98.5%",
+    "aspek": [
+      { "nama": "Kecepatan Layanan", "nilai": "97%" },
+      { "nama": "Keramahan Petugas", "nilai": "99%" },
+      { "nama": "Kelengkapan Informasi", "nilai": "98%" },
+      { "nama": "Kemudahan Akses", "nilai": "99%" }
+    ],
+    "respon": [
+      { "jenis": "Informasi Berkala", "waktu": "2 jam" },
+      { "jenis": "Informasi Serta Merta", "waktu": "30 menit" },
+      { "jenis": "Informasi Setiap Saat", "waktu": "6 jam" },
+      { "jenis": "Keberatan", "waktu": "3 hari" }
+    ]
+  }
+}

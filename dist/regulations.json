@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "UU No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik",
+    "description": "Undang-undang yang mengatur tentang hak masyarakat untuk memperoleh informasi publik dan kewajiban badan publik untuk menyediakan dan melayani permintaan informasi publik.",
+    "category": "Undang-Undang",
+    "year": 2008,
+    "viewUrl": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing",
+    "downloadUrl": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing"
+  },
+  {
+    "id": 2,
+    "title": "PP No. 61 Tahun 2010 tentang Pelaksanaan UU Keterbukaan Informasi Publik",
+    "description": "Peraturan pemerintah yang mengatur pelaksanaan keterbukaan informasi publik sebagai penjabaran dari UU No. 14 Tahun 2008.",
+    "category": "Peraturan Pemerintah",
+    "year": 2010,
+    "viewUrl": "#",
+    "downloadUrl": "#"
+  },
+  {
+    "id": 3,
+    "title": "Permendikbud No. 3 Tahun 2020 tentang PPID Kemendikbud",
+    "description": "Peraturan menteri yang mengatur tentang organisasi dan tata kerja Pejabat Pengelola Informasi dan Dokumentasi di lingkungan Kemendikbud.",
+    "category": "Permendikbud",
+    "year": 2020,
+    "viewUrl": "#",
+    "downloadUrl": "#"
+  }
+]

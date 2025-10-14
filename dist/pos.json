@@ -1,0 +1,56 @@
+[
+  {
+    "title": "POS Pelayanan Permohonan Informasi Publik",
+    "description": "Prosedur standar untuk melayani permohonan informasi publik dari masyarakat, mulai dari penerimaan hingga penyampaian informasi.",
+    "updated": "15 Januari 2024",
+    "fileType": "PDF",
+    "fileSize": "2.5 MB",
+    "viewUrl": "/files/pos/permohonan.pdf",
+    "downloadUrl": "/files/pos/permohonan.pdf"
+  },
+  {
+    "title": "POS Pengelolaan Keberatan Informasi Publik",
+    "description": "Prosedur standar untuk menangani keberatan atas pelayanan informasi publik yang diajukan oleh pemohon informasi.",
+    "updated": "10 Januari 2024",
+    "fileType": "PDF",
+    "fileSize": "1.8 MB",
+    "viewUrl": "/files/pos/keberatan.pdf",
+    "downloadUrl": "/files/pos/keberatan.pdf"
+  },
+  {
+    "title": "POS Pengumpulan dan Pengolahan Informasi Publik",
+    "description": "Prosedur standar untuk mengumpulkan, mengolah, dan mendokumentasikan informasi publik dari berbagai unit kerja.",
+    "updated": "5 Januari 2024",
+    "fileType": "PDF",
+    "fileSize": "3.2 MB",
+    "viewUrl": "/files/pos/pengumpulan.pdf",
+    "downloadUrl": "/files/pos/pengumpulan.pdf"
+  },
+  {
+    "title": "POS Klasifikasi dan Pengamanan Informasi",
+    "description": "Prosedur standar untuk mengklasifikasikan informasi publik dan informasi yang dikecualikan serta pengamanannya.",
+    "updated": "20 Desember 2023",
+    "fileType": "PDF",
+    "fileSize": "2.1 MB",
+    "viewUrl": "/files/pos/klasifikasi.pdf",
+    "downloadUrl": "/files/pos/klasifikasi.pdf"
+  },
+  {
+    "title": "POS Monitoring dan Evaluasi Layanan PPID",
+    "description": "Prosedur standar untuk melakukan monitoring dan evaluasi terhadap kinerja layanan informasi publik PPID.",
+    "updated": "15 Desember 2023",
+    "fileType": "PDF",
+    "fileSize": "1.9 MB",
+    "viewUrl": "/files/pos/monitoring.pdf",
+    "downloadUrl": "/files/pos/monitoring.pdf"
+  },
+  {
+    "title": "POS Pengelolaan Pengaduan Layanan Informasi",
+    "description": "Prosedur standar untuk mengelola pengaduan masyarakat terkait layanan informasi publik PPID.",
+    "updated": "10 Desember 2023",
+    "fileType": "PDF",
+    "fileSize": "1.6 MB",
+    "viewUrl": "/files/pos/pengaduan.pdf",
+    "downloadUrl": "/files/pos/pengaduan.pdf"
+  }
+]

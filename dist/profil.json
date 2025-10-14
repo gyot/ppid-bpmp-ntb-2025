@@ -1,0 +1,57 @@
+{
+  "title": "Profil PPID Kemendikdasmen",
+  "tentang": {
+    "title": "Tentang PPID",
+    "descriptions": [
+      "Pejabat Pengelola Informasi dan Dokumentasi (PPID) Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi adalah unit kerja yang bertanggung jawab dalam pengelolaan dan pelayanan informasi publik sesuai dengan Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik.",
+      "PPID berkomitmen untuk memberikan layanan informasi yang transparan, akuntabel, dan mudah diakses oleh masyarakat dalam rangka mendukung tata kelola pemerintahan yang baik di bidang pendidikan."
+    ]
+  },
+  "visi": "Terwujudnya pelayanan informasi yang transparan dan akuntabel untuk memenuhi hak pemohon informasi sesuai dengan ketentuan peraturan perundang-undangan yang berlaku.",
+  "misi": [
+    "Menyediakan informasi publik yang akurat dan dapat dipertanggungjawabkan;",
+      "Membangun dan mengembangkan sistem penyediaan dan layanan informasi;",
+      "Meningkatkan pengelolaan informasi dan dokumentasi secara baik, efisien, mudah diakses dan bersifat desentralisasi; dan",
+      "Memanfaatkan teknologi informasi dalam memberikan layanan informasi publik kepada masyarakat dan mendukung pengelolaan keterbukaan informasi publik."
+  ],
+  "tupoksi": {
+    "intro": "Tugas dan Fungsi PPID Pelaksana sesuai dengan Permendikbudristek Nomor 69 Tahun 2024 adalah sebagai berikut:",
+    "items": [
+    "menyediakan, menyimpan, mendokumentasikan, dan mengamankan Informasi;",
+    "menyediakan sumber daya untuk pelayanan dan pendokumentasian Informasi Publik;",
+    "menganggarkan pembiayaan bagi pelayanan dan pendokumentasian Informasi Publik;",
+    "membuat prosedur pelayanan dan pendokumentasian Informasi Publik;",
+    "melayani permintaan informasi publik secara cepat, tepat dan sederhana serta sesuai dengan aturan yang berlaku;",
+    "membuat pertimbangan tertulis atas setiap kebijakan yang diambil untuk memenuhi hak setiap orang atas informasi;",
+    "mengoordinasikan dan mengonsolidasikan pengumpulan dokumen informasi publik dari tim kerja PPID pelaksana Kementerian dan/atau petugas pelayanan Informasi Publik Kementerian di unit organisasi atau unit kerja;",
+    "mengklasifikasikan Informasi publik dan/atau pengubahannya;",
+    "melakukan evaluasi terhadap pelayanan dan pendokumentasian Informasi Publik di unit organisasi atau unit kerja yang bersangkutan; dan",
+    "menyusun laporan pelayanan dan pendokumentasian Informasi Publik."
+    ]
+  },
+  "struktur": {
+    "kepala": {
+      "jabatan": "Kepala PPID",
+      "nama": "Dr. Ahmad Susanto, M.Pd"
+    },
+    "koordinator": [
+      { "jabatan": "Koordinator Layanan", "nama": "Siti Nurhaliza, S.Kom", "icon": "fas fa-users", "bgClass": "bg-green-500" },
+      { "jabatan": "Koordinator Data", "nama": "Budi Santoso, S.T", "icon": "fas fa-database", "bgClass": "bg-orange-500" },
+      { "jabatan": "Koordinator Dokumentasi", "nama": "Maya Sari, S.I.Kom", "icon": "fas fa-file-alt", "bgClass": "bg-purple-500" }
+    ]
+  },
+  "kontak": [
+    {
+      "items": [
+        { "label": "Alamat", "value": "Jl. Panjitilar Negara, No. 8 Mataram - NTB", "icon": "fas fa-map-marker-alt" },
+        { "label": "Telepon", "value": "+62 811-3906-669", "icon": "fas fa-phone" }
+      ]
+    },
+    {
+      "items": [
+        { "label": "Email", "value": "ntblpmp@gmail.com", "icon": "fas fa-envelope" },
+        { "label": "Jam Layanan", "value": "Senin - Jumat: 08:00 - 16:00 WIB", "icon": "fas fa-clock" }
+      ]
+    }
+  ]
+}
