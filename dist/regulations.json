@@ -1,29 +1,146 @@
 [
   {
     "id": 1,
-    "title": "UU No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik",
-    "description": "Undang-undang yang mengatur tentang hak masyarakat untuk memperoleh informasi publik dan kewajiban badan publik untuk menyediakan dan melayani permintaan informasi publik.",
-    "category": "Undang-Undang",
-    "year": 2008,
-    "viewUrl": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing",
-    "downloadUrl": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing"
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 1 Tahun 2024 tentang Organisasi dan Tata Kerja Kementerian Pendidikan Dasar dan Menengah",
+    "description": "Peraturan tentang Organisasi dan Tata Kerja Kementerian Pendidikan Dasar dan Menengah",
+    "category": "Peraturan Menteri",
+    "year": 2024,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3526",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3526"
   },
   {
     "id": 2,
-    "title": "PP No. 61 Tahun 2010 tentang Pelaksanaan UU Keterbukaan Informasi Publik",
-    "description": "Peraturan pemerintah yang mengatur pelaksanaan keterbukaan informasi publik sebagai penjabaran dari UU No. 14 Tahun 2008.",
-    "category": "Peraturan Pemerintah",
-    "year": 2010,
-    "viewUrl": "#",
-    "downloadUrl": "#"
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 6 Tahun 2025 tentang Pengembangan Kompetensi Pegawai Aparatur Sipil Negara",
+    "description": "Peraturan tentang Pengembangan Kompetensi Pegawai Aparatur Sipil Negara",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3523",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3523"
   },
   {
     "id": 3,
-    "title": "Permendikbud No. 3 Tahun 2020 tentang PPID Kemendikbud",
-    "description": "Peraturan menteri yang mengatur tentang organisasi dan tata kerja Pejabat Pengelola Informasi dan Dokumentasi di lingkungan Kemendikbud.",
-    "category": "Permendikbud",
-    "year": 2020,
-    "viewUrl": "#",
-    "downloadUrl": "#"
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 5 Tahun 2025 tentang Organisasi dan Tata Kerja Unit Pelaksana Teknis Bidang Guru dan Tenaga Kependidikan",
+    "description": "Peraturan tentang Organisasi dan Tata Kerja Unit Pelaksana Teknis Bidang Guru dan Tenaga Kependidikan",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3522",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3522"
+  },
+  {
+    "id": 4,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 2 Tahun 2025 tentang Pedoman Pengawasan Penggunaan Bahasa Indonesia",
+    "description": "Peraturan tentang Pedoman Pengawasan Penggunaan Bahasa Indonesia",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3517",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3517"
+  },
+  {
+    "id": 5,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 1 Tahun 2025 tentang Redistribusi Guru Aparatur Sipil Negara pada Satuan Pendidikan yang Diselenggarakan oleh Masyarakat",
+    "description": "Peraturan tentang Redistribusi Guru Aparatur Sipil Negara pada Satuan Pendidikan yang Diselenggarakan oleh Masyarakat",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3504",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3504"
+  },
+  {
+    "id": 6,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 1 Tahun 2024 tentang Organisasi dan Tata Kerja Kementerian Pendidikan Dasar dan Menengah",
+    "description": "Peraturan tentang Organisasi dan Tata Kerja Kementerian Pendidikan Dasar dan Menengah",
+    "category": "Peraturan Menteri",
+    "year": 2024,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3500",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3500"
+  },
+  {
+    "id": 7,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 19 Tahun 2025 tentang Rencana Strategis Kementerian Pendidikan Dasar dan Menengah Tahun 2025-2029",
+    "description": "Peraturan tentang Rencana Strategis Kementerian Pendidikan Dasar dan Menengah Tahun 2025-2029",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3565",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3565"
+  },
+  {
+    "id": 8,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 17 Tahun 2025 tentang Manajemen Talenta Pegawai Negeri Sipil di Kementerian Pendidikan Dasar dan Menengah",
+    "description": "Peraturan tentang Manajemen Talenta Pegawai Negeri Sipil di Kementerian Pendidikan Dasar dan Menengah",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3553",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3553"
+  },
+  {
+    "id": 9,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 15 Tahun 2015 tentang Pencabutan Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2016 tentang Pejabat Penilai dan Atasan Pejabat Penilai Prestasi Kerja Pegawai Negeri Sipil di Lingkungan Kementerian Pendidikan dan Kebudayaan sebagaimana telah diubah dengan Peraturan Menteri Pendidikan dan Kebudayaan Nomor 2 Tahun 2017 tentang Perubahan atas Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2016 tentang Pejabat Penilai dan Atasan Pejabat Penilai Prestasi Kerja Pegawai Negeri Sipil di Lingkungan Kementerian Pendidikan dan Kebudayaan",
+    "description": "Peraturan tentang Pejabat Penilai dan Atasan Pejabat Penilai Prestasi Kerja Pegawai Negeri Sipil di Lingkungan Kementerian Pendidikan dan Kebudayaan",
+    "category": "Peraturan Menteri",
+    "year": 2015,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3554",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3554"
+  },
+  {
+    "id": 10,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 16 Tahun 2025 tentang Pengawasan Perbukuan",
+    "description": "Peraturan tentang Pengawasan Perbukuan",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3559",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3559"
+  },
+  {
+    "id": 11,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 14 Tahun 2025 tentang Pelaksanaan Pemberian Tunjangan Kinerja Pegawai di Lingkungan Kementerian Pendidikan Dasar dan Menengah",
+    "description": "Peraturan tentang Pelaksanaan Pemberian Tunjangan Kinerja Pegawai di Lingkungan Kementerian Pendidikan Dasar dan Menengah",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3557",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3557"
+  },
+  {
+    "id": 12,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 13 Tahun 2025 tentang Perubahan atas Peraturan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi Nomor 12 Tahun 2024 tentang Kurikulum pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah",
+    "description": "Peraturan tentang Kurikulum pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3537",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3537"
+  },
+  {
+    "id": 13,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 12 Tahun 2025 tentang Standar Isi pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah",
+    "description": "Peraturan tentang Standar Isi pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3538",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3538"
+  },
+  {
+    "id": 14,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 11 Tahun 2025 tentang Pemenuhan Beban Kerja Guru",
+    "description": "Peraturan tentang Pemenuhan Beban Kerja Guru",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3532",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3532"
+  },
+  {
+    "id": 15,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 10 Tahun 2025 tentang Standar Kompetensi Lulusan pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah",
+    "description": "Peraturan tentang Standar Kompetensi Lulusan pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3530",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3530"
+  },
+  {
+    "id": 16,
+    "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 8 Tahun 2025 tentang Petunjuk Teknis Pengelolaan Dana Bantuan Operasional Satuan Pendidikan",
+    "description": "Peraturan tentang Petunjuk Teknis Pengelolaan Dana Bantuan Operasional Satuan Pendidikan",
+    "category": "Peraturan Menteri",
+    "year": 2025,
+    "viewUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3540",
+    "downloadUrl": "https://jdih.kemendikdasmen.go.id/detail_peraturan?main=3540"
   }
 ]

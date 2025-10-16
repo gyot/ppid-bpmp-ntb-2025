@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Standar Pelayanan — BPMP Prov. Nusa Tenggara Barat (2025)</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-1:#0f7b6b;
+    --green-2:#118c76;
+    --gold:#f2c94c;
+    --bg:#f6fbfa;
+    --card:#ffffff;
+    --muted:#eaf7f3;
+    --text:#073733;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family: "Poppins", Arial, sans-serif;
+    margin:0; background:linear-gradient(180deg,var(--bg),#ffffff);
+    color:var(--text); -webkit-font-smoothing:antialiased;
+  }
+  .container{max-width:1100px;margin:28px auto;padding:18px;}
+  header{
+    background:linear-gradient(90deg,var(--green-1),var(--green-2));
+    color:white;padding:18px;border-radius:10px;display:flex;gap:16px;align-items:center;
+    box-shadow:0 10px 30px rgba(6,38,36,0.08);
+  }
+  .logo{
+    width:76px;height:76px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;
+  }
+  header h1{margin:0;font-size:20px}
+  header p{margin:4px 0 0;font-size:13px;opacity:0.95}
+
+  /* tabs */
+  .tabs{display:flex;gap:8px;padding:12px 6px;margin-top:16px;flex-wrap:wrap}
+  .tab{
+    background:var(--card);border-radius:10px;padding:10px 14px;border:1px solid #e6f4ef;cursor:pointer;
+    font-weight:600;color:var(--green-1);box-shadow:0 6px 18px rgba(12,64,59,0.03);
+  }
+  .tab.active{background:linear-gradient(90deg,var(--green-1),var(--green-2));color:white;border-color:transparent}
+
+  .panel{margin-top:18px;background:var(--card);border-radius:10px;padding:20px;border:1px solid #e9f7f3;box-shadow:0 10px 30px rgba(6,38,36,0.04)}
+  .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+  @media (max-width:880px){ .grid{grid-template-columns:1fr} .tabs{justify-content:center} }
+
+  .section-title{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:700;color:var(--green-1)}
+  .muted{color:#376c63;font-size:13px;margin-top:6px}
+  .box{background:var(--muted);padding:12px;border-radius:8px;border-left:6px solid var(--gold);margin-top:12px}
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:14px}
+  table th, table td{padding:8px;border:1px solid #e8f7f2;text-align:left}
+  table th{background:linear-gradient(90deg,#e8fef8,#ffffff);color:var(--green-1)}
+  .kpi{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+  .kpi .card{flex:1;min-width:140px;background:white;padding:12px;border-radius:8px;border:1px solid #eef8f5;text-align:center}
+  .kpi .num{font-size:20px;font-weight:800;color:var(--green-1)}
+  .contact{background:#f7fff9;border:1px solid #e7f8ef;padding:12px;border-radius:8px;margin-top:12px}
+  .small{font-size:13px;color:#2f6b62}
+
+  /* accordion inside panel */
+  .acc{margin-top:12px}
+  .acc .item{border-radius:8px;background:white;border:1px solid #eef8f5;overflow:hidden;margin-bottom:10px}
+  .acc .head{padding:12px 14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+  .acc .head h4{margin:0;font-size:15px;color:var(--green-1)}
+  .acc .body{padding:0 14px 16px 14px;display:none;font-size:14px;color:#234b44}
+  .acc .body.show{display:block}
+
+  footer{margin-top:18px;text-align:center;color:#154f46;font-size:13px;padding:10px}
+
+  .chip{display:inline-block;background:#eafaf3;color:var(--green-1);padding:6px 10px;border-radius:999px;font-weight:700}
+  a.link{color:var(--green-1);text-decoration:none;font-weight:600}
+  .right{float:right}
+
+  /* print tweaks */
+  @media print{
+    body{background:white}
+    header, .tabs {page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo" aria-hidden>BPMP<br>NTB</div>
+      <div>
+        <h1>Standar Pelayanan BPMP Prov. Nusa Tenggara Barat</h1>
+        <p>Ditetapkan di Mataram • 6 Januari 2025 — Versi Draft 2025</p>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist" aria-label="Daftar layanan">
+      <button class="tab active" data-target="sp-data">Data & Informasi</button>
+      <button class="tab" data-target="sp-pemetaan">Pemetaan & Supervisi</button>
+      <button class="tab" data-target="sp-kemitraan">Kemitraan</button>
+      <button class="tab" data-target="sp-fasilitasi">Fasilitasi</button>
+      <button class="tab" data-target="sp-peminjaman">Peminjaman Sarpras</button>
+      <button class="tab" data-target="sp-pengaduan">Pengaduan Masyarakat</button>
+      <button class="tab" data-target="sp-magang">Penerimaan Magang</button>
+    </nav>
+
+    <!-- Panel template: each panel includes grid main + aside with KPI/contact -->
+    <!-- DATA & INFORMASI -->
+    <section id="sp-data" class="panel" role="tabpanel">
+      <div class="grid">
+        <div>
+          <div class="section-title">Standar Pelayanan — Data & Informasi Mutu Pendidikan</div>
+          <div class="muted">Layanan permintaan data/informasi melalui ULT dan SPIP. Tidak dipungut biaya.</div>
+
+          <div class="box">
+            <strong>Ringkasan Mekanisme</strong>
+            <ol style="margin:8px 0 0 18px;">
+              <li>Pemohon mengajukan permohonan melalui Unit Layanan Terpadu (ULT).</li>
+              <li>ULT memeriksa dokumen; permohonan diteruskan ke Persuratan atau SPIP.</li>
+              <li>SPIP memeriksa kelengkapan, berkoordinasi dengan pengelola data.</li>
+              <li>Data/informasi diserahkan kepada pemohon; berkas disimpan sebagai dokumentasi.</li>
+            </ol>
+          </div>
+
+          <div class="acc" id="acc-data">
+            <div class="item">
+              <div class="head"><h4>Persyaratan</h4><span class="chip">Surat / ID</span></div>
+              <div class="body">
+                <ul>
+                  <li>Surat permohonan resmi dari instansi/organisasi; atau surat tugas jika datang langsung.</li>
+                  <li>Menunjukkan tanda pengenal/ID Card bagi pelanggan yang hadir langsung.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Jangka Waktu</h4><span class="chip">Maks. 5 hari kerja</span></div>
+              <div class="body">
+                <p>Pelayanan diberikan paling lama 5 (lima) hari kerja, atau disesuaikan jenis data yang diminta.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Biaya</h4><span class="chip">Gratis</span></div>
+              <div class="body">
+                <p>Tidak dipungut biaya untuk layanan data & informasi. Untuk layanan khusus yang membutuhkan biaya akan diinformasikan terpisah.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Produk Layanan</h4><span class="chip">Dokumen</span></div>
+              <div class="body">
+                <p>Data dan informasi mutu pendidikan (digital/cetak sesuai permohonan).</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Dasar Hukum (pilihan utama)</strong>
+            <ul style="margin:8px 0 0 18px">
+              <li>UU No.25/2009 tentang Pelayanan Publik</li>
+              <li>UU No.14/2008 & PP No.61/2010 tentang Keterbukaan Informasi Publik</li>
+              <li>Permendikbudristek No.11/2022 (Organisasi & Tata Kerja)</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="kpi">
+            <div class="card"><div class="num">5 hrk</div><div class="small">Maks. waktu</div></div>
+            <div class="card"><div class="num">Gratis</div><div class="small">Biaya</div></div>
+            <div class="card"><div class="num">SPIP</div><div class="small">Penanggung jawab</div></div>
+          </div>
+
+          <div class="contact">
+            <strong>Kontak & Pengaduan</strong>
+            <div class="small" style="margin-top:8px;">
+              Kepala BPMP NTB — Jl. Panji Tilarnegara No.8, Mataram<br>
+              Telepon / WA: <strong>0811-390-6669</strong><br>
+              Website: <a class="link" href="https://bpmpntb.kemdikbud.go.id" target="_blank">bpmpntb.kemdikbud.go.id</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PEMETAAN & SUPERVISI -->
+    <section id="sp-pemetaan" class="panel" role="tabpanel" hidden>
+      <div class="grid">
+        <div>
+          <div class="section-title">Standar Pelayanan — Pemetaan & Supervisi Mutu Pendidikan</div>
+          <div class="muted">Pelayanan menurut disposisi Kepala → Kasubbag Umum → Tim Pemetaan. Waktu & biaya disesuaikan.</div>
+
+          <div class="box">
+            <strong>Ringkasan Mekanisme</strong>
+            <ol style="margin:8px 0 0 18px;">
+              <li>Pemohon mengajukan permohonan melalui ULT.</li>
+              <li>Disposisi Kepala BPMP ke Kasubbag Umum.</li>
+              <li>Kasubbag koordinasi dengan Tim Kerja Pemetaan & Supervisi.</li>
+              <li>Jika tersedia, pelaksanaan; hasil disampaikan ke dinas/yayasan.</li>
+            </ol>
+          </div>
+
+          <div class="acc" id="acc-pemetaan">
+            <div class="item">
+              <div class="head"><h4>Persyaratan</h4><span class="chip">Permohonan & Data</span></div>
+              <div class="body">
+                <ul>
+                  <li>Permohonan supervisi dari pihak berkepentingan.</li>
+                  <li>Data nama sekolah & alamat yang jelas.</li>
+                  <li>Disarankan ajukan 1 tahun sebelumnya untuk perencanaan.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Jangka Waktu</h4><span class="chip">Estimasi 5 hari*</span></div>
+              <div class="body">
+                <p>Estimasi administrasi 5 hari kerja; pelaksanaan lapangan sesuai jadwal yang disepakati.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Biaya</h4><span class="chip">Sesuai RAB</span></div>
+              <div class="body">
+                <p>Pembiayaan mengikuti Standar Biaya Masukan atau kesepakatan dengan pemohon.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Produk Layanan</strong>
+            <ul style="margin:8px 0 0 18px">
+              <li>Laporan pelaksanaan pemetaan & supervisi mutu pendidikan.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="kpi">
+            <div class="card"><div class="num">Tim</div><div class="small">Sesuai jadwal</div></div>
+            <div class="card"><div class="num">SOP</div><div class="small">Proses supervisi</div></div>
+          </div>
+
+          <div class="contact">
+            <strong>Penanggung Jawab</strong>
+            <div class="small" style="margin-top:8px;">
+              Kepala Sub Bagian Umum — Koordinasi Tim Pemetaan & Supervisi<br>
+              Permohonan via ULT BPMP NTB
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- KEMITRAAN -->
+    <section id="sp-kemitraan" class="panel" role="tabpanel" hidden>
+      <div class="grid">
+        <div>
+          <div class="section-title">Standar Pelayanan — Kemitraan Penjaminan Mutu Pendidikan</div>
+          <div class="muted">Proses Kemitraan: ULT → Disposisi Kepala → Kasubbag Umum → Tim Kemitraan → MoU/implementasi.</div>
+
+          <div class="box">
+            <strong>Ringkasan Mekanisme</strong>
+            <ol style="margin:8px 0 0 18px;">
+              <li>Pemohon mengajukan surat resmi & proposal kemitraan ke ULT.</li>
+              <li>Disposisi Kepala ke Kasubbag Umum; Kasubbag koordinasi Tim Kemitraan.</li>
+              <li>Susun MoU, jadwal, RAB; laksanakan kegiatan sesuai kesepakatan.</li>
+            </ol>
+          </div>
+
+          <div class="acc" id="acc-kemitraan">
+            <div class="item">
+              <div class="head"><h4>Persyaratan</h4><span class="chip">Proposal & MoU</span></div>
+              <div class="body">
+                <ul>
+                  <li>Surat resmi lembaga.</li>
+                  <li>Proposal kemitraan yang jelas.</li>
+                  <li>MoU/nota kesepahaman jika diperlukan.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Biaya & Produk</h4><span class="chip">Sesuai RAB</span></div>
+              <div class="body">
+                <p>Biaya mengikuti RAB yang disepakati; produk: SK Kerjasama, MoU, sertifikat, laporan dokumentasi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Penanganan Pengaduan</strong>
+            <p class="small">Pengaduan: surat ke Kepala BPMP atau via WA/telepon/website/medsos (nomor & kanal tercantum di kontak).</p>
+          </div>
+        </div>
+
+        <aside>
+          <div class="kpi">
+            <div class="card"><div class="num">MoU</div><div class="small">Dokumen kerjasama</div></div>
+            <div class="card"><div class="num">Sertifikat</div><div class="small">Peserta</div></div>
+          </div>
+
+          <div class="contact">
+            <strong>Koordinasi</strong>
+            <div class="small" style="margin-top:8px;">
+              Kepala Sub Bagian Umum — Tim Kerja Kemitraan<br>
+              Alur: ULT → Disposisi → Penyusunan MoU → Pelaksanaan
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FASILITASI -->
+    <section id="sp-fasilitasi" class="panel" role="tabpanel" hidden>
+      <div class="grid">
+        <div>
+          <div class="section-title">Standar Pelayanan — Fasilitasi Penjaminan Mutu Pendidikan</div>
+          <div class="muted">Fasilitasi diberikan berdasarkan permohonan; penjadwalan, materi, dan narasumber disepakati.</div>
+
+          <div class="box">
+            <strong>Ringkasan Mekanisme</strong>
+            <ol style="margin:8px 0 0 18px;">
+              <li>Pemohon mengajukan surat permohonan fasilitasi ke Kepala BPMP melalui ULT.</li>
+              <li>Disposisi ke Kasubbag Umum; Kasubbag koordinasi Tim Fasilitasi.</li>
+              <li>Penyusunan jadwal, materi, narasumber; pelaksanaan mengikuti kesepakatan.</li>
+            </ol>
+          </div>
+
+          <div class="acc" id="acc-fasilitasi">
+            <div class="item">
+              <div class="head"><h4>Persyaratan</h4><span class="chip">Surat & Materi</span></div>
+              <div class="body">
+                <ul>
+                  <li>Surat permohonan resmi.</li>
+                  <li>Lampiran jadwal kegiatan dan materi.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Jangka Waktu</h4><span class="chip">Max. 2 hari (admin)</span></div>
+              <div class="body">
+                <p>Admin menindaklanjuti paling lama 2 hari kerja; pelaksanaan sesuai kesepakatan.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Biaya</h4><span class="chip">Sesuai RAB / kemampuan</span></div>
+              <div class="body">
+                <p>Pembiayaan mengikuti Standar Biaya Masukan APBN/APBD atau kesepakatan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="kpi">
+            <div class="card"><div class="num">2 hr</div><div class="small">Estimasi admin</div></div>
+            <div class="card"><div class="num">SOP</div><div class="small">Fasilitasi</div></div>
+          </div>
+
+          <div class="contact">
+            <strong>Penanggung Jawab</strong>
+            <div class="small" style="margin-top:8px;">
+              Kepala Sub Bagian Umum — Koordinasi Tim Fasilitasi
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PEMINJAMAN SARPRAS -->
+    <section id="sp-peminjaman" class="panel" role="tabpanel" hidden>
+      <div class="grid">
+        <div>
+          <div class="section-title">Standar Pelayanan — Peminjaman Sarana & Prasarana</div>
+          <div class="muted">Peminjaman via ULT; pengecekan ketersediaan & administrasi oleh Urusan Kerumahtanggaan/HTK.</div>
+
+          <div class="box">
+            <strong>Ringkasan Mekanisme</strong>
+            <ol style="margin:8px 0 0 18px;">
+              <li>Pemohon ajukan surat peminjaman (instansi) atau KTP (perorangan) ke ULT.</li>
+              <li>Disposisi ke Kasubbag Umum; koordinasi dengan Koordinator HTK & Urusan Kerumahtanggaan.</li>
+              <li>Jika disetujui, fasilitas disiapkan & dipinjam sesuai jadwal; administrasi selesai pasca penggunaan.</li>
+            </ol>
+          </div>
+
+          <div class="acc" id="acc-peminjaman">
+            <div class="item">
+              <div class="head"><h4>Persyaratan</h4><span class="chip">Surat / KTP</span></div>
+              <div class="body">
+                <ul>
+                  <li>Instansi: surat permohonan resmi.</li>
+                  <li>Perorangan: kartu identitas (KTP).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Jangka Waktu</h4><span class="chip">Max. 2 hari kerja</span></div>
+              <div class="body">
+                <p>Jawaban awal paling lama 2 hari kerja sejak permohonan masuk.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Biaya</h4><span class="chip">Tarif PNBP</span></div>
+              <div class="body">
+                <p>Tarif sesuai PNBP yang ditetapkan Kepala BPMP berdasarkan persetujuan Kemenkeu.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Produk Layanan</strong>
+            <ul style="margin:8px 0 0 18px">
+              <li>Persetujuan peminjaman, surat tugas (jika perlu), dan dokumentasi penggunaan sarpras.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="kpi">
+            <div class="card"><div class="num">10</div><div class="small">Max pelaksana</div></div>
+            <div class="card"><div class="num">2 hr</div><div class="small">Jawaban awal</div></div>
+          </div>
+
+          <div class="contact">
+            <strong>Penanggung Jawab</strong>
+            <div class="small" style="margin-top:8px;">
+              Koordinator Urusan Humas, Tatalaksana & Kerumahtanggaan — Petugas Peminjaman
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PENGADUAN MASYARAKAT -->
+    <section id="sp-pengaduan" class="panel" role="tabpanel" hidden>
+      <div class="grid">
+        <div>
+          <div class="section-title">Standar Pelayanan — Pengaduan Masyarakat</div>
+          <div class="muted">Pengaduan diterima langsung atau online; ditangani oleh SPIP / staf penerima aduan.</div>
+
+          <div class="box">
+            <strong>Ringkasan Mekanisme</strong>
+            <ol style="margin:8px 0 0 18px;">
+              <li>Pengguna menyampaikan pengaduan via elektronik (ULT/SP4N-LAPOR) atau langsung.</li>
+              <li>SPIP/staf menerima dan memeriksa bukti; memberikan tanda terima aduan.</li>
+              <li>SPIP memproses pengaduan paling lama 1 hari kerja (atau sesuai jenis aduan).</li>
+            </ol>
+          </div>
+
+          <div class="acc" id="acc-pengaduan">
+            <div class="item">
+              <div class="head"><h4>Persyaratan</h4><span class="chip">Buku tamu / bukti</span></div>
+              <div class="body">
+                <ul>
+                  <li>Isi buku tamu elektronik/manual atau pengaduan online (link ULT/SP4N).</li>
+                  <li>Menunjukkan identitas jika mengajukan langsung.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Jangka Waktu</h4><span class="chip">Max. 1 hari kerja</span></div>
+              <div class="body">
+                <p>Pengaduan diproses paling lama 1 hari kerja, atau sesuai jenis pengaduan.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="head"><h4>Biaya</h4><span class="chip">Gratis</span></div>
+              <div class="body">
+                <p>Tidak dikenakan biaya untuk pengaduan dan penanganannya.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Produk Layanan</strong>
+            <ul style="margin:8px 0 0 18px">
+              <li>Aduan diterima oleh SPIP; bukti penerimaan diberikan kepada pelapor.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="kpi">
+            <div class="card"><div class="num">1 hr</div><div class="small">Max proses awal</div></div>
+            <div class="card"><div class="num">Gratis</div><div class="small">Biaya</div></div>
+          </div>
+
+          <div class="contact">
+            <strong>Saluran Pengaduan</strong>
+            <div class="small" style="margin-top:8px;">
+              ULT / SP4N-LAPOR (lapor.go.id) / Website / WA: <strong>0811-390-6669</strong><br>
+              Laman: <a class="link" href="https://bpmpntb.kemdikbud.go.id" target="_blank">bpmpntb.kemdikbud.go.id</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- MAGANG -->
+    <section id="sp-magang" class="panel" role="tabpanel" hidden>
+      <div class="grid">
+        <div>
+          <div class="section-title">Standar Pelayanan — Penerimaan Peserta Magang</div>
+          <div class="muted">Penerimaan peserta magang melalui permohonan resmi; maksimal kuota 15 orang/tahun.</div>
+
+          <div class="box">
+            <strong>Ringkasan Mekanisme</strong>
+            <ol style="margin:8px 0 0 18px;">
+              <li>Pemohon (pimpinan lembaga/kepala sekolah/ketua prodi) kirim surat permohonan ke Kepala BPMP.</li>
+              <li>Kepala BPMP menugaskan staf pembimbing; surat persetujuan dikirim ke pemohon.</li>
+              <li>Peserta magang ditempatkan sesuai kuota & pembimbing.</li>
+            </ol>
+          </div>
+
+          <div class="acc" id="acc-magang">
+            <div class="item">
+              <div class="head"><h4>Persyaratan</h4><span class="chip">Surat & Jadwal</span></div>
+              <div class="body">
+                <ul>
+                  <li>Surat permohonan dari pimpinan lembaga/ketua prodi/kepala sekolah.</li>
+                  <li>Isi permohonan menyebut jumlah peserta dan jadwal; kuota maksimal 15 orang/tahun.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <div class="head"><h4>Jangka Waktu</h4><span class="chip">Max. 5 hari kerja</span></div>
+              <div class="body">
+                <p>Keputusan persetujuan paling lama 5 hari kerja sejak permohonan diterima.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="head"><h4>Biaya</h4><span class="chip">Gratis</span></div>
+              <div class="body">
+                <p>Tidak dipungut biaya untuk penerimaan peserta magang.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Produk Layanan</strong>
+            <ul style="margin:8px 0 0 18px">
+              <li>Surat persetujuan magang diterbitkan dan dikirim ke pemohon.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="kpi">
+            <div class="card"><div class="num">5 hrk</div><div class="small">Max proses</div></div>
+            <div class="card"><div class="num">15</div><div class="small">Kuota / tahun</div></div>
+          </div>
+
+          <div class="contact">
+            <strong>Kontak Magang</strong>
+            <div class="small" style="margin-top:8px;">
+              Kepala BPMP / Staf Pembimbing Magang — Permohonan via ULT BPMP NTB
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      Dokumen sumber: Draft "Standar Pelayanan 2025" — BPMP Provinsi Nusa Tenggara Barat. Ditetapkan: 6 Januari 2025.
+    </footer>
+  </div>
+
+<script>
+  // Tabs
+  const tabs = document.querySelectorAll('.tab');
+  const panels = {
+    'sp-data': document.getElementById('sp-data'),
+    'sp-pemetaan': document.getElementById('sp-pemetaan'),
+    'sp-kemitraan': document.getElementById('sp-kemitraan'),
+    'sp-fasilitasi': document.getElementById('sp-fasilitasi'),
+    'sp-peminjaman': document.getElementById('sp-peminjaman'),
+    'sp-pengaduan': document.getElementById('sp-pengaduan'),
+    'sp-magang': document.getElementById('sp-magang')
+  };
+  tabs.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      tabs.forEach(t=>t.classList.remove('active'));
+      btn.classList.add('active');
+      Object.values(panels).forEach(p=>p.hidden=true);
+      panels[btn.dataset.target].hidden = false;
+      panels[btn.dataset.target].scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  // Accordion behavior
+  document.querySelectorAll('.acc .item .head').forEach(head=>{
+    head.addEventListener('click', ()=>{
+      const body = head.nextElementSibling;
+      const parent = head.closest('.acc');
+      // close others in same acc (optional)
+      parent.querySelectorAll('.body').forEach(b=>{ if(b!==body) b.classList.remove('show'); });
+      body.classList.toggle('show');
+    });
+  });
+
+  // default focus
+  document.querySelector('.tab.active').focus();
+</script>
+</body>
+</html>

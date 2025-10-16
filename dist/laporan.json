@@ -1,19 +1,19 @@
 {
   "laporanTahunan": [
     {
+      "tahun": 2024,
+      "deskripsi": "Laporan komprehensif layanan informasi publik PPID Kemendikdasmen tahun 2024",
+      "file": "https://drive.google.com/file/d/1Igh6UHRyP2zLvgnilJDuzem-t8vgLCVu/view?usp=drive_link"
+    },
+    {
       "tahun": 2023,
       "deskripsi": "Laporan komprehensif layanan informasi publik PPID Kemendikdasmen tahun 2023",
-      "file": "https://drive.google.com/file/d/1nKzOzpXwSBXaSPJPmzJM00OBgXWtR2nM/view?usp=sharing"
+      "file": "https://drive.google.com/file/d/1-LQYKWPOE9V1NpZZekLFEcPN7U4V4EVb/view?usp=drive_link"
     },
     {
       "tahun": 2022,
       "deskripsi": "Laporan komprehensif layanan informasi publik PPID Kemendikdasmen tahun 2022",
-      "file": "/files/laporan-2022.pdf"
-    },
-    {
-      "tahun": 2021,
-      "deskripsi": "Laporan komprehensif layanan informasi publik PPID Kemendikdasmen tahun 2021",
-      "file": "/files/laporan-2021.pdf"
+      "file": "https://drive.google.com/file/d/1UHkGFNHcCMKf9fW-NRvo3bzxWYMi0fgN/view?usp=drive_link"
     }
   ],
   "statistik": {

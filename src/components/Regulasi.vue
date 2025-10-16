@@ -4,6 +4,131 @@
       Regulasi Terkait Informasi Publik
     </h2>
 
+    <!-- Tambahan: Blok Regulasi Keterbukaan Informasi Publik -->
+    <div class="bg-gradient-to-r from-blue-50 to-blue-50 rounded-xl shadow p-6 mb-8">
+      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-green-700 via-green-600 to-green-400 bg-clip-text text-transparent mb-4">
+        Regulasi Keterbukaan Informasi Publik
+      </h1>
+      <div class="text-gray-800 leading-relaxed">
+        <p class="font-bold mb-2">A. Keterbukaan Informasi Publik</p>
+        <ol class="mb-4 list-decimal ml-6">
+          <li>
+            <a href="https://drive.google.com/file/d/14qJ7cs9yiQPdLvrq9Ae_y9nEFR3zJgMK/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Undang-Undang Nomor 14 Tahun 2008
+            </a>
+            tentang Keterbukaan Informasi Publik.
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1l3y05_uXeBwNVNuvQa__mxSzp2zuZJ_l/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Pemerintah Nomor 61 Tahun 2010
+            </a>
+            tentang Pelaksanaan Undang-undang Keterbukaan Informasi Publik.
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1f5SjL9dkZOQ5qSwqOta7vfNqwafEfqHA/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Mahkamah Agung Nomor 2 Tahun 2011
+            </a>
+            tentang Tata Cara Penyelesaian Sengketa Informasi Publik di Pengadilan.
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/16u57vwC84DeJxQwpeF0V9ELtO5ylEGiG/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Komisi Informasi Pusat Nomor 1 Tahun 2021
+            </a>
+            tentang Standar Layanan Informasi Publik.
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1GjSs1JNC4tFrhNDrbjBL6_UsuDEU8VX4/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Pendidikan dan Kebudayaan Riset, dan Teknologi Nomor 69 Tahun 2024
+            </a>
+            tentang Pengelolaan dan Pelayanan Informasi Publik di Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi.
+          </li>
+        </ol>
+
+        <p class="font-bold mb-2">B. Pengelolaan Organisasi</p>
+        <ol class="mb-4 list-decimal ml-6">
+          <li>
+            <a href="https://drive.google.com/file/d/1GeTWF75l4v5rrdXP1qgZE7tUfIL8-vxT/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi Nomor 11 Tahun 2022
+            </a>
+            tentang Organisasi dan Tata Kerja Balai Besar Penjaminan Mutu Pendidikan dan Balai Penjaminan Mutu Pendidikan
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/12fbxR8t4h8r9FhVvxtGYrq2MoJNCZfFJ/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Keputusan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi Nomor 263/O/2022
+            </a>
+            tentang Rincian Tugas Balai Besar Penjaminan Mutu Pendidikan dan Balai Penjaminan Mutu Pendidikan
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1k0tJ-yl2zm9d6SnMYQFc4oAOnSzmtZvk/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 1 Tahun 2024
+            </a>
+            tentang Organisasi dan Tata Kerja Kementerian Pendidikan Dasar dan Menengah
+          </li>
+        </ol>
+
+        <p class="font-bold mb-2">C. Administrasi</p>
+        <ol class="mb-4 list-decimal ml-6">
+          <li>
+            <a href="https://drive.google.com/file/d/1OVaPV6QZ3aeiStvbakd14g-VOu5ng9lf/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2021
+            </a>
+            tentang Tata Naskah Dinas Kementerian Pendidikan dan Kebudayaan
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1g88Fl04f3UuPEuxfa5cODvuL4LxQRGrv/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi Nomor 20 Tahun 2022
+            </a>
+            tentang Penyelenggaraan Kearsipan Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
+          </li>
+        </ol>
+
+        <p class="font-bold mb-2">D. Personil</p>
+        <ol class="mb-4 list-decimal ml-6">
+          <li>
+            <a href="https://drive.google.com/file/d/1rtQaY6eH0fXgbh-KS386zY5U1SkRwLfD/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Undang-Undang Nomor 20 Tahun 2023
+            </a>
+            tentang Aparatur Sipil Negara
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1VKpR2P7Yr4zvmJXIgaHQL5vs2IgjRRHL/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Keputusan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi Nomor 207/O/2023
+            </a>
+            tentang Kelas Jabatan Balai Besar Penjaminan Mutu Pendidikan dan Balai Penjaminan Mutu Pendidikan Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1LfBzfGQyv_wMp5eEZHmpdASkGYkNNHM5/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Keputusan Menteri Pendidikan Dasar dan Menengah Nomor 1/M/2025
+            </a>
+            tentang Uraian Jabatan Pelaksana di Luar Bidang Pendidikan Pada Kementerian Pendidikan Dasar dan Menengah
+          </li>
+        </ol>
+
+        <p class="font-bold mb-2">E. Keuangan</p>
+        <ol class="mb-2 list-decimal ml-6">
+          <li>
+            <a href="https://drive.google.com/file/d/1_J7jIi7H_1GpKsnmhRn4sThdUGs-lu8Y/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Keuangan Nomor 39 Tahun 2024
+            </a>
+            tentang Standar Biaya Masukan Tahun Anggaran 2025
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1BVYkHjL111w_uX0_ZvNO6flthaCEqWW7/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 14 Tahun 2025
+            </a>
+            tentang Pelaksanaan Pemberian Tunjangan Kinerja Pegawai di Lingkungan Kementerian Pendidikan Dasar dan Menengah
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1_J7jIi7H_1GpKsnmhRn4sThdUGs-lu8Y/view?usp=sharing" target="_blank" rel="noopener" class="text-blue-700 underline hover:text-blue-900">
+              Peraturan Menteri Keuangan Nomor 32 Tahun 2025
+            </a>
+            tentang Standar Biaya Masukan Tahun Anggaran 2026
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- Akhir blok tambahan -->
+
     <div class="bg-white rounded-lg shadow-md p-6 mb-6">
       <!-- Filter -->
       <div class="flex flex-wrap gap-4 mb-6">

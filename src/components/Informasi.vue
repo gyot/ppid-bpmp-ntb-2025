@@ -4,12 +4,29 @@
 
     <div class="grid gap-6">
       <!-- Informasi Berkala -->
-      <div class="bg-white rounded-lg shadow-md p-6">
+      <!-- <div class="bg-white rounded-lg shadow-md p-6">
         <h3 class="text-xl font-semibold text-blue-800 mb-4">
           <i class="fas fa-calendar-alt mr-2"></i>Informasi Berkala
         </h3>
-
-        <!-- Filter -->
+        <p class="text-gray-600 mb-4">
+          Informasi yang wajib disediakan dan diumumkan secara berkala oleh
+          badan publik.
+        </p>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/lakin" target="_blank">Laporan Kinerja</a></li>
+          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/renstra" target="_blank"
+              rel="noopener noreferrer">Rencana Strategis</a></li>
+          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/profil" target="_blank"
+              rel="noopener noreferrer">Profil Lembaga</a></li>
+          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/perjanjian_kinerja" target="_blank"
+              rel="noopener noreferrer">Perjanjian Kinerja</a></li>
+          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/survey-kepuasan-pelanggan" target="_blank"
+              rel="noopener noreferrer">Hasil Survei Kepuasan</a></li>
+          <li>• <a
+              href="https://docs.google.com/spreadsheets/d/11H4pQiAt-T9xYUjykG9E_53RdHd1P2f2W2M3wmNZ5Og/edit?gid=1023866293#gid=1023866293"
+              target="_blank" rel="noopener noreferrer">Bukti Lapor SPT</a></li>
+        </ul>
+        Filter
         <div class="mb-4 flex flex-wrap gap-4">
           <select v-model="yearFilter" class="border border-gray-300 rounded-lg px-4 py-2">
             <option value="">Semua Tahun</option>
@@ -19,15 +36,12 @@
             <option value="">Semua Kategori</option>
             <option v-for="cat in availableCategories" :key="cat" :value="cat">{{ cat }}</option>
           </select>
-          <button
-            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-            @click="page = 1"
-          >
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700" @click="page = 1">
             <i class="fas fa-filter mr-2"></i>Filter
           </button>
         </div>
 
-        <!-- Tabel -->
+        Tabel
         <div class="overflow-x-auto">
           <table class="w-full border-collapse border border-gray-300">
             <thead>
@@ -42,23 +56,17 @@
             </thead>
             <tbody>
               <tr v-for="(doc, idx) in pagedDocuments" :key="doc.id">
-                <td class="border border-gray-300 px-4 py-2">{{ idx + 1 + (page-1)*pageSize }}</td>
+                <td class="border border-gray-300 px-4 py-2">{{ idx + 1 + (page - 1) * pageSize }}</td>
                 <td class="border border-gray-300 px-4 py-2">{{ doc.title }}</td>
                 <td class="border border-gray-300 px-4 py-2">{{ doc.category }}</td>
                 <td class="border border-gray-300 px-4 py-2">{{ doc.year }}</td>
                 <td class="border border-gray-300 px-4 py-2">{{ doc.responsible }}</td>
                 <td class="border border-gray-300 px-4 py-2">
-                  <a
-                    :href="doc.viewUrl"
-                    target="_blank"
-                    class="bg-green-500 text-white px-3 py-1 rounded mr-2 hover:bg-green-600"
-                  >
+                  <a :href="doc.viewUrl" target="_blank"
+                    class="bg-green-500 text-white px-3 py-1 rounded mr-2 hover:bg-green-600">
                     <i class="fas fa-eye"></i> Lihat
                   </a>
-                  <a
-                    :href="doc.downloadUrl"
-                    class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
-                  >
+                  <a :href="doc.downloadUrl" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
                     <i class="fas fa-download"></i> Unduh
                   </a>
                 </td>
@@ -67,24 +75,40 @@
           </table>
         </div>
 
-        <!-- Pagination -->
+        Pagination
         <div class="flex justify-end items-center mt-4 space-x-2">
-          <button
-            class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300"
-            :disabled="page === 1"
-            @click="page--"
-          >Prev</button>
+          <button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300" :disabled="page === 1"
+            @click="page--">Prev</button>
           <span>Halaman {{ page }} dari {{ totalPages }}</span>
-          <button
-            class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300"
-            :disabled="page === totalPages"
-            @click="page++"
-          >Next</button>
+          <button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300" :disabled="page === totalPages"
+            @click="page++">Next</button>
         </div>
-      </div>
+      </div> -->
 
       <!-- Informasi lainnya (statis) -->
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold text-blue-800 mb-4">
+            <i class="fas fa-calendar-alt mr-2"></i>Informasi Berkala
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Informasi yang wajib disediakan dan diumumkan secara berkala.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/lakin" target="_blank">Laporan Kinerja</a></li>
+            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/renstra" target="_blank"
+                rel="noopener noreferrer">Rencana Strategis</a></li>
+            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/profil" target="_blank"
+                rel="noopener noreferrer">Profil Lembaga</a></li>
+            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/perjanjian_kinerja" target="_blank"
+                rel="noopener noreferrer">Perjanjian Kinerja</a></li>
+            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/survey-kepuasan-pelanggan" target="_blank"
+                rel="noopener noreferrer">Hasil Survei Kepuasan</a></li>
+            <li>• <a
+                href="https://docs.google.com/spreadsheets/d/11H4pQiAt-T9xYUjykG9E_53RdHd1P2f2W2M3wmNZ5Og/edit?gid=1023866293#gid=1023866293"
+                target="_blank" rel="noopener noreferrer">Bukti Lapor SPT</a></li>
+          </ul>
+        </div>
         <div class="bg-white rounded-lg shadow-md p-6">
           <h3 class="text-lg font-semibold text-orange-800 mb-4">
             <i class="fas fa-bolt mr-2"></i>Informasi Serta Merta
@@ -103,9 +127,15 @@
           </h3>
           <p class="text-gray-600 mb-4">Informasi yang harus disediakan dan diumumkan secara berkala.</p>
           <ul class="text-sm text-gray-600 space-y-2">
-            <li>• Data statistik pendidikan</li>
-            <li>• Informasi anggaran</li>
-            <li>• Profil pejabat</li>
+            <li>• <a href="https://www.facebook.com/bpmpntb" target="_blank" rel="noopener noreferrer">Facebook BPMP
+                Provinsi NTB</a></li>
+            <li>• <a href="https://www.instagram.com/bpmpntb/" target="_blank" rel="noopener noreferrer">Instagram BPMP
+                Provinsi NTB</a></li>
+            <li>• <a href="https://www.youtube.com/@bpmp_ntb" target="_blank" rel="noopener noreferrer">YouTube BPMP
+                Provinsi NTB</a></li>
+            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/" target="_blank" rel="noopener noreferrer">Website
+                Resmi BPMP Provinsi NTB</a></li>
+
           </ul>
         </div>
 

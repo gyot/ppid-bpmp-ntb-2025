@@ -1,5 +1,23 @@
 <template>
-    <!-- Laporan Section -->
+    <!-- Popup Maklumat Pelayanan -->
+    <div v-if="showMaklumat" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="relative bg-gray-50 rounded-xl shadow-2xl px-6 py-8 text-center max-w-lg w-full mx-4">
+            <!-- Paperclip decorations -->
+            <div class="absolute left-4 -top-4 text-4xl text-blue-200 select-none" style="font-family: cursive; transform: rotate(-15deg);">C</div>
+            <div class="absolute right-4 -top-4 text-4xl text-blue-200 select-none" style="font-family: cursive; transform: rotate(15deg);">C</div>
+            <div class="mb-4">
+                <span class="text-2xl md:text-3xl font-extrabold text-red-700 tracking-wide" style="letter-spacing:1px;">MAKLUMAT PELAYANAN</span>
+            </div>
+            <div class="text-lg md:text-xl italic font-medium text-gray-900 leading-relaxed mb-6">
+                <span>“Dengan ini, kami sanggup menyelenggarakan pelayanan sesuai standar pelayanan yang telah ditetapkan dan apabila tidak menepati janji ini, kami siap menerima sanksi sesuai peraturan perundang-undangan yang berlaku”</span>
+            </div>
+            <button @click="showMaklumat = false" class="mt-2 px-6 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg font-semibold shadow transition">
+                Tutup
+            </button>
+        </div>
+    </div>
+
+    <!-- Konten Lama -->
     <Transition name="fade-in" mode="out-in">
         <section id="beranda" class="section-content fade-in">
             <!-- Hero Slider -->
@@ -32,30 +50,28 @@
                 
             </div>
 
-
-            <!-- Visi Misi -->
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-800 mb-4">Visi</h3>
-                    <p class="text-gray-600 bg-blue-50 p-4 rounded-lg">
-                        Terwujudnya pelayanan informasi yang transparan dan akuntabel untuk memenuhi hak pemohon
-                        informasi sesuai dengan ketentuan peraturan perundang-undangan yang berlaku.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-800 mb-4">Misi</h3>
-                    <div class="bg-green-50 p-4 rounded-lg">
-                        <ul class="text-gray-600 space-y-2 list-decimal list-inside">
-                            <li>Menyediakan informasi publik yang akurat dan dapat dipertanggungjawabkan;</li>
-                            <li>Membangun dan mengembangkan sistem penyediaan dan layanan informasi;</li>
-                            <li>Meningkatkan pengelolaan informasi dan dokumentasi secara baik, efisien, mudah diakses
-                                dan bersifat desentralisasi; dan</li>
-                            <li>Memanfaatkan teknologi informasi dalam memberikan layanan informasi publik
-                                kepada masyarakat dan mendukung pengelolaan keterbukaan informasi publik.</li>
-                        </ul>
+            <!-- Informasi tentang PPID -->
+             
+            <div class="mt-12 w-full mb-12">
+                <div class="bg-white rounded-2xl shadow-lg px-8 py-8 flex flex-col md:flex-row items-center border-l-8 border-blue-500">
+                    
+                    <div class="flex-1 text-center md:text-left">
+                        <p class="text-xl text-gray-800 leading-relaxed">
+                            <span class="font-bold text-blue-700">PPID</span>
+                            (<span class="italic text-blue-600">Pejabat Pengelola Informasi dan Dokumentasi</span>)
+                            adalah pejabat yang bertugas mengelola dan melayani informasi publik dari badan publik seperti instansi pemerintah, BUMN, dan perguruan tinggi sesuai amanat
+                            <span class="font-semibold text-blue-700">Undang-Undang Nomor 14 Tahun 2008</span>
+                            tentang Keterbukaan Informasi Publik (<span class="font-semibold text-blue-700">UU KIP</span>).
+                            <br>
+                            <span class="block mt-4 text-blue-600 font-medium text-lg">
+                                Keberadaan PPID mempermudah masyarakat memperoleh informasi karena pelayanan dilakukan melalui satu pintu.
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
+            &nbsp;
+           
 
             <!-- Quick Links -->
             <div class="grid md:grid-cols-4 gap-4 mb-8">
@@ -81,34 +97,81 @@
                 </button>
             </div>
 
-            <!-- Statistics -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6">Statistik Layanan</h3>
-                <div class="grid md:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-blue-600 mb-2">2,847</div>
-                        <div class="text-gray-600">Total Dokumen</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-green-600 mb-2">1,523</div>
-                        <div class="text-gray-600">Permohonan Selesai</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-orange-600 mb-2">98.5%</div>
-                        <div class="text-gray-600">Tingkat Kepuasan</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-purple-600 mb-2">24 Jam</div>
-                        <div class="text-gray-600">Rata-rata Respon</div>
+            
+            <!-- Tombol Form dan E-PPID -->
+            <div class="text-center my-12 space-y-6">
+                <a href="https://ppid.bpmpntb.id/form-permohonan" target="_blank" rel="noopener"
+                    class="inline-flex items-center justify-center bg-blue-700 hover:bg-blue-800 text-white text-xl font-semibold px-8 py-4 rounded-xl shadow-lg transition">
+                    <i class="fas fa-play-circle mr-2"></i> FORM PERMOHONAN INFORMASI
+                </a>
+
+                <div class="flex flex-col items-center space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="https://www.bbpmpjabar.id/wp-content/uploads/2023/09/google-play-store-logo-A9F117BED5-seeklogo.com_.png"
+                            alt="Google Play" class="w-10 h-10">
+                        <a href="https://play.google.com/store/apps/details?id=com.dera.perman.ppidkemendikbudristek"
+                            target="_blank" rel="noopener"
+                            class="inline-flex items-center justify-center bg-blue-700 hover:bg-blue-800 text-white text-lg font-semibold px-6 py-3 rounded-xl shadow transition">
+                            <i class="fas fa-play-circle mr-2"></i> E-PPID ANDROID
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <!-- PRANALA LUAR -->
+            <div class="text-center mt-16">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-8">PRANALA LUAR</h3>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+                    <a href="https://ppid.kemendikdasmen.go.id/" target="_blank" rel="noopener"
+                        class="flex flex-col items-center space-y-3 hover:opacity-90 transition">
+                        <img src="https://www.bbpmpjabar.id/wp-content/uploads/2023/09/PPID-Pusat.png"
+                            alt="PPID Kemendikdasmen" class="w-28 h-28 object-contain rounded-lg shadow">
+                        <span class="font-semibold text-blue-800">PPID KEMENDIKDASMEN</span>
+                    </a>
+
+                    <a href="https://bpmpntb.lapor.go.id/" target="_blank" rel="noopener"
+                        class="flex flex-col items-center space-y-3 hover:opacity-90 transition">
+                        <img src="https://www.bbpmpjabar.id/wp-content/uploads/2023/09/LAPOR5-1.png"
+                            alt="SP4N Lapor" class="w-28 h-28 object-contain rounded-lg shadow">
+                        <span class="font-semibold text-blue-800">SP4N LAPOR!</span>
+                    </a>
+
+                    <a href="https://wbs.kemdikbud.go.id/" target="_blank" rel="noopener"
+                        class="flex flex-col items-center space-y-3 hover:opacity-90 transition">
+                        <img src="https://www.bbpmpjabar.id/wp-content/uploads/2023/09/Sistem-Pelaporan-Pelanggaran.png"
+                            alt="WBS" class="w-28 h-28 object-contain rounded-lg shadow">
+                        <span class="font-semibold text-blue-800">WBS</span>
+                    </a>
+
+                    <a href="https://spse.inaproc.id/kemendikdasmen/" target="_blank" rel="noopener"
+                        class="flex flex-col items-center space-y-3 hover:opacity-90 transition">
+                        <img src="https://www.bbpmpjabar.id/wp-content/uploads/2025/10/inaproc-spse.png"
+                            alt="LPSE" class="w-28 h-28 object-contain rounded-lg shadow">
+                        <span class="font-semibold text-blue-800">LPSE</span>
+                    </a>
+                </div>
+            </div>
+            
         </section>
     </Transition>
 </template>
+
 <script setup>
-// name: Beranda
+import { ref, onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
+
+const showMaklumat = ref(true)
+
+onMounted(() => {
+    // Optional: Only show once per session
+    // if (sessionStorage.getItem('maklumatShown')) {
+    //     showMaklumat.value = false
+    // } else {
+    //     showMaklumat.value = true
+    //     sessionStorage.setItem('maklumatShown', '1')
+    // }
+})
 
 const title = 'PPID BPMP Provinsi NTB'
 const description = 'Melayani kebutuhan informasi publik dengan transparansi dan akuntabilitas di BPMP Provinsi NTB.'
@@ -143,6 +206,7 @@ useHead({
     ]
 })
 </script>
+
 <style scoped>
 .fade-in-enter-active,
 .fade-in-leave-active {
@@ -159,5 +223,12 @@ useHead({
 .fade-in-leave-from {
     opacity: 1;
     transform: translateY(0);
+}
+
+.statistik-img {
+    width: 150px; /* Atur lebar gambar */
+    height: 150px; /* Atur tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    margin: 0 auto; /* Memusatkan gambar */
 }
 </style>

@@ -13,7 +13,7 @@
         </div>
         <div class="bg-white-100 rounded-lg p-4 flex items-center justify-center">
           <div class="text-center">
-            <img :src="kantorDepanImg" alt="PPID Logo" class="mx-auto mb-4">
+            <img :src="kantorDepanImg" alt="PPID Logo" class="mx-auto mb-4" />
           </div>
         </div>
       </div>
@@ -46,57 +46,99 @@
       </div>
 
       <!-- Struktur Organisasi -->
-      <div class="mb-8">
+      <div class="mb-8" width="1080">
         <h3 class="text-xl font-semibold text-blue-800 mb-4">Struktur Organisasi</h3>
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <div class="text-center mb-6">
-            <div class="bg-blue-600 text-white p-4 rounded-lg inline-block mb-2">
-              <i class="fas fa-user-tie text-2xl"></i>
-            </div>
-            <h4 class="font-semibold">{{ profil.struktur.kepala.jabatan }}</h4>
-            <p class="text-sm text-gray-600">{{ profil.struktur.kepala.nama }}</p>
-          </div>
-          <div class="grid md:grid-cols-3 gap-4">
-            <div v-for="(koor, idx) in profil.struktur.koordinator" :key="idx" class="text-center">
-              <div :class="['text-white p-3 rounded-lg inline-block mb-2', koor.bgClass]">
-                <i :class="koor.icon"></i>
-              </div>
-              <h5 class="font-semibold text-sm">{{ koor.jabatan }}</h5>
-              <p class="text-xs text-gray-600">{{ koor.nama }}</p>
+        <img :src="strukturOrgImg" alt="Struktur Organisasi" class="mx-auto mb-4" />
+        <!-- <OrgChart /> -->
+      </div>
+      <h3 class="text-xl font-semibold text-blue-800 mb-4">Informasi Kontak</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div v-for="(kontak, idx) in profil.kontak" :key="idx" class="space-y-4">
+          <div class="flex items-center space-x-3" v-for="(item, j) in kontak.items" :key="j">
+            <i :class="[item.icon, 'text-blue-600']"></i>
+            <div>
+              <p class="font-semibold">{{ item.label }}</p>
+              <p class="text-gray-600">{{ item.value }}</p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Kontak -->
-      <div>
-        <h3 class="text-xl font-semibold text-blue-800 mb-4">Informasi Kontak</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div v-for="(kontak, idx) in profil.kontak" :key="idx" class="space-y-4">
-            <div class="flex items-center space-x-3" v-for="(item, j) in kontak.items" :key="j">
-              <i :class="[item.icon, 'text-blue-600']"></i>
-              <div>
-                <p class="font-semibold">{{ item.label }}</p>
-                <p class="text-gray-600">{{ item.value }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue"
-import kantorDepanImg from '../assets/kantor_depan.jpg'
+import kantorDepanImg from "../assets/kantor_depan.jpg"
+import strukturOrgImg from "../assets/struktur_org.png"
+import OrgChart from "./OrgChart.vue"
+// import OrgChart from '@balkangraph/orgchart.js'
+
 
 const profil = ref(null)
+
+// Struktur organisasi
+const orgData = {
+  name: "Kepala Dinas",
+  children: [
+    {
+      name: "Kasubbag Program",
+      children: [
+        { name: "Staf 1" },
+        { name: "Staf 2" }
+      ]
+    },
+    {
+      name: "Kasubbag Umum",
+      children: [
+        { name: "Staf 3" },
+        { name: "Staf 4" }
+      ]
+    }
+  ]
+}
+
+// 🔁 Fungsi pembuat diagram
+function generateMermaid(data) {
+  let lines = ["graph TB"] // lurus vertikal
+
+  function traverse(node, parentId = null) {
+    const id = node.name.replace(/\s+/g, "_")
+    const label = `${node.name}<br/><i>${node.title}</i>`
+    lines.push(`${id}["${label}"]:::person`)
+
+    if (parentId) lines.push(`${parentId} --> ${id}`)
+
+    if (node.children) {
+      node.children.forEach(child => traverse(child, id))
+    }
+  }
+
+  traverse(data)
+  // gaya node kotak biru, garis tebal
+  lines.push("classDef person fill:#e0f2fe,stroke:#0369a1,stroke-width:2px,color:#0c4a6e,rx:8,ry:8;")
+  // gaya garis lurus tanpa panah
+  lines.push("linkStyle default stroke:#0369a1,stroke-width:1.5px,fill:none;")
+  return lines.join("\n")
+}
+
+
+const chartCode = generateMermaid(orgData)
 
 onMounted(async () => {
   const res = await fetch("/ppid/profil.json")
   profil.value = await res.json()
+  // mermaid.initialize({
+  //   startOnLoad: true,
+  //   theme: "neutral",
+  //   themeVariables: {
+  //     primaryColor: "#e0f2fe",
+  //     edgeLabelBackground: "#ffffff",
+  //     primaryBorderColor: "#0369a1",
+  //     lineColor: "#0369a1"
+  //   }
+  // })
+
 })
 </script>
 
@@ -104,8 +146,20 @@ onMounted(async () => {
 .fade-in {
   animation: fadeIn 0.6s ease-in;
 }
+
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.orgchart-container {
+  background-color: #f9fafb;
 }
 </style>

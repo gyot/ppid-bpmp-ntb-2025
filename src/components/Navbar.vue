@@ -12,8 +12,9 @@
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-4">
-                    <i class="fas fa-phone text-blue-200"></i>
-                    <span class="text-sm">Hotline: +62 811-3906-669</span>
+                    <a href="https://bpmpntb.kemendikdasmen.go.id" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+                        Kembali ke Laman BPMP Provinsi NTB
+                    </a>
                 </div>
             </div>
         </div>
@@ -28,9 +29,17 @@
                     <router-link to="/" class="nav-btn px-4 py-3 hover:bg-blue-700 transition-colors whitespace-nowrap" exact-active-class="bg-blue-700">
                         <i class="fas fa-home mr-2"></i>Beranda
                     </router-link>
-                    <router-link to="/profil" class="nav-btn px-4 py-3 hover:bg-blue-700 transition-colors whitespace-nowrap" exact-active-class="bg-blue-700">
-                        <i class="fas fa-user-circle mr-2"></i>Profil PPID
-                    </router-link>
+                    <div class="relative group">
+                      <router-link to="/profil" class="nav-btn px-4 py-3 hover:bg-blue-700 transition-colors whitespace-nowrap" exact-active-class="bg-blue-700">
+                        <i class="fas fa-user-circle mr-2"></i>Profil
+                        <i class="fas fa-caret-down ml-1"></i>
+                      </router-link>
+                      <div class="absolute left-0 mt-1 w-48 bg-white text-blue-900 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity z-50">
+                        <router-link to="/profil" class="block px-4 py-3 hover:bg-blue-100 rounded-t-lg">Profil PPID</router-link>
+                        <router-link to="/profil-pejabat" class="block px-4 py-3 hover:bg-blue-100">Profil Pejabat</router-link>
+                        <router-link to="/profil-pegawai" class="block px-4 py-3 hover:bg-blue-100 rounded-b-lg">Profil SDM</router-link>
+                      </div>
+                    </div>
                     <router-link to="/informasi" class="nav-btn px-4 py-3 hover:bg-blue-700 transition-colors whitespace-nowrap" exact-active-class="bg-blue-700">
                         <i class="fas fa-info-circle mr-2"></i>Jenis Informasi
                     </router-link>

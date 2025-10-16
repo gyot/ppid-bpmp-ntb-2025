@@ -11,5 +11,6 @@ export default defineConfig({
   base: '/ppid/',
   server: {
     allowedHosts: ['ppid.gdoank.my.id']
-  }
+  },
+  // assetsInclude: ['**/*', '!**/.git/**']
 })

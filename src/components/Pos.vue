@@ -10,8 +10,13 @@
         dengan pengelolaan dan pelayanan informasi publik di PPID Kemendikdasmen.
       </p>
 
-      <div class="grid gap-4">
-        <div
+      <div class="grid gap-2">
+        <iframe 
+            src="https://drive.google.com/embeddedfolderview?id=1DBsH_vJzw3o96NSGzKeFKNtrfzQd7SWx#list" 
+            style="width:100%; height:600px; border:0;">
+        </iframe>
+
+        <!-- <div
           v-for="(item, index) in posList"
           :key="index"
           class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 fade-in"
@@ -51,12 +56,12 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- loading state -->
-        <div v-if="loading" class="text-center text-gray-500">
+        <!-- <div v-if="loading" class="text-center text-gray-500">
           Memuat data POS...
-        </div>
+        </div> -->
       </div>
 
       <div class="mt-8 bg-blue-50 p-4 rounded-lg">

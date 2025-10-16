@@ -46,7 +46,7 @@
       </div>
 
       <!-- Statistik Permohonan -->
-      <div class="bg-white rounded-lg shadow-md p-6" v-if="data.statistik">
+      <!-- <div class="bg-white rounded-lg shadow-md p-6" v-if="data.statistik">
         <h3 class="text-xl font-semibold text-green-800 mb-4">
           <i class="fas fa-chart-bar mr-2"></i>Statistik Permohonan Informasi
         </h3>
@@ -79,7 +79,6 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <!-- per bulan -->
           <div>
             <h4 class="font-semibold text-gray-800 mb-3">
               Permohonan per Bulan (2024)
@@ -104,7 +103,6 @@
             </div>
           </div>
 
-          <!-- kategori -->
           <div>
             <h4 class="font-semibold text-gray-800 mb-3">
               Kategori Informasi Diminta
@@ -129,10 +127,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- Tingkat Kepuasan -->
-      <div class="bg-white rounded-lg shadow-md p-6" v-if="data.kepuasan">
+      <!-- <div class="bg-white rounded-lg shadow-md p-6" v-if="data.kepuasan">
         <h3 class="text-xl font-semibold text-purple-800 mb-4">
           <i class="fas fa-star mr-2"></i>Tingkat Kepuasan Layanan
         </h3>
@@ -176,13 +173,14 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue"
+
 
 const data = ref({})
 

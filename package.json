@@ -6,12 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:keep": "npm run prebuild:keep && vite build && npm run postbuild:keep",
+    "prebuild:keep": "if not exist .keepdist mkdir .keepdist && if exist dist\\robots.txt copy dist\\robots.txt .keepdist\\robots.txt",
+    "postbuild:keep": "if exist .keepdist\\robots.txt copy .keepdist\\robots.txt dist\\robots.txt && rmdir /s /q .keepdist"
   },
   "dependencies": {
+    "@balkangraph/orgchart.js": "^8.21.14",
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@tailwindcss/vite": "^4.1.11",
     "@vueuse/head": "^2.0.0",
+    "chart.js": "^4.5.1",
+    "mermaid": "^11.12.0",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
@@ -20,6 +26,6 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
-    "vite": "^7.1.2"
+    "vite": "^7.1.9"
   }
 }
