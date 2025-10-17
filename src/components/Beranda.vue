@@ -100,7 +100,7 @@
             
             <!-- Tombol Form dan E-PPID -->
             <div class="text-center my-12 space-y-6">
-                <a href="https://ppid.bpmpntb.id/form-permohonan" target="_blank" rel="noopener"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLoZSsUkZYnoguNd-eSJLCVub-nlisScWwWr29Zx3N8OXsiw/viewform?usp=header" target="_blank" rel="noopener"
                     class="inline-flex items-center justify-center bg-blue-700 hover:bg-blue-800 text-white text-xl font-semibold px-8 py-4 rounded-xl shadow-lg transition">
                     <i class="fas fa-play-circle mr-2"></i> FORM PERMOHONAN INFORMASI
                 </a>

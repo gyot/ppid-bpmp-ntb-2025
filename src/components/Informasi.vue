@@ -96,6 +96,8 @@
           </p>
           <ul class="text-sm text-gray-600 space-y-2">
             <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/lakin" target="_blank">Laporan Kinerja</a></li>
+            <li>• <a href="https://drive.google.com/drive/folders/11R8GUj8foewWQPfYNeVxAl7ntw_MpW6m?usp=sharing" target="_blank">Laporan keuangan</a></li>
+            <li>• <a href="https://drive.google.com/drive/folders/1bH4z1SFYaogsLoukzrqlefc-2F1ohR4A?usp=drive_link" target="_blank">Dipa</a></li>
             <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/renstra" target="_blank"
                 rel="noopener noreferrer">Rencana Strategis</a></li>
             <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/profil" target="_blank"
