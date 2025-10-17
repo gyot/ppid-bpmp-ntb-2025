@@ -1,117 +1,50 @@
 <template>
-  <section id="informasi" class="section-content">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">Jenis Informasi Publik</h2>
+  <div>
+    <h1 class="text-2xl font-bold mb-6">Informasi Publik</h1>
 
-    <div class="grid gap-6">
-      <!-- Informasi Berkala -->
-      <!-- <div class="bg-white rounded-lg shadow-md p-6">
-        <h3 class="text-xl font-semibold text-blue-800 mb-4">
-          <i class="fas fa-calendar-alt mr-2"></i>Informasi Berkala
-        </h3>
-        <p class="text-gray-600 mb-4">
-          Informasi yang wajib disediakan dan diumumkan secara berkala oleh
-          badan publik.
-        </p>
-        <ul class="text-sm text-gray-600 space-y-2">
-          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/lakin" target="_blank">Laporan Kinerja</a></li>
-          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/renstra" target="_blank"
-              rel="noopener noreferrer">Rencana Strategis</a></li>
-          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/profil" target="_blank"
-              rel="noopener noreferrer">Profil Lembaga</a></li>
-          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/perjanjian_kinerja" target="_blank"
-              rel="noopener noreferrer">Perjanjian Kinerja</a></li>
-          <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/survey-kepuasan-pelanggan" target="_blank"
-              rel="noopener noreferrer">Hasil Survei Kepuasan</a></li>
-          <li>• <a
-              href="https://docs.google.com/spreadsheets/d/11H4pQiAt-T9xYUjykG9E_53RdHd1P2f2W2M3wmNZ5Og/edit?gid=1023866293#gid=1023866293"
-              target="_blank" rel="noopener noreferrer">Bukti Lapor SPT</a></li>
-        </ul>
-        Filter
-        <div class="mb-4 flex flex-wrap gap-4">
-          <select v-model="yearFilter" class="border border-gray-300 rounded-lg px-4 py-2">
-            <option value="">Semua Tahun</option>
-            <option v-for="year in availableYears" :key="year" :value="year">{{ year }}</option>
-          </select>
-          <select v-model="categoryFilter" class="border border-gray-300 rounded-lg px-4 py-2">
-            <option value="">Semua Kategori</option>
-            <option v-for="cat in availableCategories" :key="cat" :value="cat">{{ cat }}</option>
-          </select>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700" @click="page = 1">
-            <i class="fas fa-filter mr-2"></i>Filter
-          </button>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        Tabel
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr>
-                <th class="border border-gray-300 px-4 py-2 text-left">No</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Judul Dokumen</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Kategori</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Tahun</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Penanggung Jawab</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(doc, idx) in pagedDocuments" :key="doc.id">
-                <td class="border border-gray-300 px-4 py-2">{{ idx + 1 + (page - 1) * pageSize }}</td>
-                <td class="border border-gray-300 px-4 py-2">{{ doc.title }}</td>
-                <td class="border border-gray-300 px-4 py-2">{{ doc.category }}</td>
-                <td class="border border-gray-300 px-4 py-2">{{ doc.year }}</td>
-                <td class="border border-gray-300 px-4 py-2">{{ doc.responsible }}</td>
-                <td class="border border-gray-300 px-4 py-2">
-                  <a :href="doc.viewUrl" target="_blank"
-                    class="bg-green-500 text-white px-3 py-1 rounded mr-2 hover:bg-green-600">
-                    <i class="fas fa-eye"></i> Lihat
-                  </a>
-                  <a :href="doc.downloadUrl" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
-                    <i class="fas fa-download"></i> Unduh
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div
+      v-for="(item, index) in informasi"
+      :key="index"
+      class="bg-white rounded-2xl shadow-md p-6 transition hover:shadow-lg">
+      <!-- Judul -->
+      <h3
+        :class="[
+          'text-lg font-semibold mb-4 flex items-center',
+          warnaJudul(item.Uraian)
+        ]"
+      >
+        <i :class="[ikon(item.Uraian), 'mr-2 text-xl']"></i>
+        {{ item.Uraian }}
+      </h3>
 
-        Pagination
-        <div class="flex justify-end items-center mt-4 space-x-2">
-          <button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300" :disabled="page === 1"
-            @click="page--">Prev</button>
-          <span>Halaman {{ page }} dari {{ totalPages }}</span>
-          <button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300" :disabled="page === totalPages"
-            @click="page++">Next</button>
-        </div>
-      </div> -->
+      <!-- Deskripsi otomatis -->
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        {{ deskripsi(item.Uraian) }}
+      </p>
 
-      <!-- Informasi lainnya (statis) -->
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <h3 class="text-xl font-semibold text-blue-800 mb-4">
-            <i class="fas fa-calendar-alt mr-2"></i>Informasi Berkala
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Informasi yang wajib disediakan dan diumumkan secara berkala.
-          </p>
-          <ul class="text-sm text-gray-600 space-y-2">
-            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/lakin" target="_blank">Laporan Kinerja</a></li>
-            <li>• <a href="https://drive.google.com/drive/folders/11R8GUj8foewWQPfYNeVxAl7ntw_MpW6m?usp=sharing" target="_blank">Laporan keuangan</a></li>
-            <li>• <a href="https://drive.google.com/drive/folders/1bH4z1SFYaogsLoukzrqlefc-2F1ohR4A?usp=drive_link" target="_blank">Dipa</a></li>
-            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/renstra" target="_blank"
-                rel="noopener noreferrer">Rencana Strategis</a></li>
-            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/profil" target="_blank"
-                rel="noopener noreferrer">Profil Lembaga</a></li>
-            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/post/perjanjian_kinerja" target="_blank"
-                rel="noopener noreferrer">Perjanjian Kinerja</a></li>
-            <li>• <a href="https://bpmpntb.kemendikdasmen.go.id/survey-kepuasan-pelanggan" target="_blank"
-                rel="noopener noreferrer">Hasil Survei Kepuasan</a></li>
-            <li>• <a
-                href="https://docs.google.com/spreadsheets/d/11H4pQiAt-T9xYUjykG9E_53RdHd1P2f2W2M3wmNZ5Og/edit?gid=1023866293#gid=1023866293"
-                target="_blank" rel="noopener noreferrer">Bukti Lapor SPT</a></li>
-          </ul>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6">
+      <!-- Daftar Item -->
+      <ul class="text-gray-800 text-sm space-y-2">
+        <li v-for="(sub, i) in item.Items" :key="i">
+          •
+          <template v-if="sub.Link && sub.Link.startsWith('http')">
+            <a
+              :href="sub.Link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-700 hover:underline"
+            >
+              {{ sub.Informasi || "Tautan" }}
+            </a>
+          </template>
+          <template v-else>
+            {{ sub.Informasi }}
+          </template>
+        </li>
+      </ul>
+      </div>
+       <div class="bg-white rounded-lg shadow-md p-6">
           <h3 class="text-lg font-semibold text-orange-800 mb-4">
             <i class="fas fa-bolt mr-2"></i>Informasi Serta Merta
           </h3>
@@ -123,7 +56,7 @@
           </ul>
         </div>
 
-        <div class="bg-white rounded-lg shadow-md p-6">
+        <!-- <div class="bg-white rounded-lg shadow-md p-6">
           <h3 class="text-lg font-semibold text-green-800 mb-4">
             <i class="fas fa-clock mr-2"></i>Informasi Setiap Saat
           </h3>
@@ -139,7 +72,7 @@
                 Resmi BPMP Provinsi NTB</a></li>
 
           </ul>
-        </div>
+        </div> -->
 
         <div class="bg-white rounded-lg shadow-md p-6">
           <h3 class="text-lg font-semibold text-red-800 mb-4">
@@ -152,51 +85,87 @@
             <li>• Informasi yang sedang dalam proses hukum</li>
           </ul>
         </div>
-      </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from "vue"
+import { ref, onMounted } from "vue";
 
-const page = ref(1)
-const pageSize = ref(5)
-const yearFilter = ref("")
-const categoryFilter = ref("")
-const documents = ref([])
+const informasi = ref([]);
 
+// Ambil data dari file JSON (taruh di folder /public)
 onMounted(async () => {
+  // Set the browser tab title for this page
   try {
-    const res = await fetch("/ppid/informasi.json")
-    documents.value = await res.json()
-  } catch (err) {
-    console.error("Gagal memuat data:", err)
+    document.title = "Informasi - PPID BPMP NTB";
+  } catch (e) {
+    // ignore in non-browser environments
   }
-})
 
-const availableYears = computed(() => {
-  const years = new Set(documents.value.map(d => d.year))
-  return [...years].sort((a, b) => b - a)
-})
+  try {
+    const res = await fetch("/ppid/informasi_ppid.json");
+    if (!res.ok) throw new Error(`Gagal memuat file JSON: ${res.status} ${res.statusText}`);
 
-const availableCategories = computed(() => {
-  const cats = new Set(documents.value.map(d => d.category))
-  return [...cats]
-})
+    const contentType = (res.headers.get("content-type") || "").toLowerCase();
+    if (!contentType.includes("application/json")) {
+      // If server returned HTML or plain text (an error page), log it and avoid parse error
+      const body = await res.text();
+      console.error("Diterima response bukan JSON:", body);
+      throw new Error("Response is not valid JSON");
+    }
 
-const filteredDocuments = computed(() => {
-  return documents.value.filter(doc => {
-    const matchYear = yearFilter.value === "" || String(doc.year) === String(yearFilter.value)
-    const matchCategory = categoryFilter.value === "" || doc.category === categoryFilter.value
-    return matchYear && matchCategory
-  })
-})
+    informasi.value = await res.json();
+  } catch (error) {
+    console.error("Gagal memuat data:", error);
+  }
+});
 
-const totalPages = computed(() => Math.ceil(filteredDocuments.value.length / pageSize.value))
+// --- Utility Fungsi ---
 
-const pagedDocuments = computed(() => {
-  const start = (page.value - 1) * pageSize.value
-  return filteredDocuments.value.slice(start, start + pageSize.value)
-})
+const warnaJudul = (uraian = "") => {
+  uraian = uraian.toLowerCase();
+  if (uraian.includes("berkala")) return "text-blue-800";
+  if (uraian.includes("serta merta")) return "text-orange-800";
+  if (uraian.includes("setiap saat")) return "text-green-800";
+  if (uraian.includes("dikecualikan")) return "text-red-800";
+  if (uraian.includes("komitmen")) return "text-indigo-700";
+  if (uraian.includes("digitalisasi")) return "text-teal-700";
+  return "text-gray-800";
+};
+
+const ikon = (uraian = "") => {
+  uraian = uraian.toLowerCase();
+  if (uraian.includes("berkala")) return "fas fa-calendar-alt";
+  if (uraian.includes("serta merta")) return "fas fa-bolt";
+  if (uraian.includes("setiap saat")) return "fas fa-clock";
+  if (uraian.includes("dikecualikan")) return "fas fa-ban";
+  if (uraian.includes("komitmen")) return "fas fa-handshake";
+  if (uraian.includes("digitalisasi")) return "fas fa-laptop-code";
+  return "fas fa-folder";
+};
+
+const deskripsi = (uraian = "") => {
+  uraian = uraian.toLowerCase();
+  if (uraian.includes("berkala"))
+    return "Informasi yang wajib disediakan dan diumumkan secara berkala.";
+  if (uraian.includes("serta merta"))
+    return "Informasi yang dapat mengancam hajat hidup orang banyak dan ketertiban umum.";
+  if (uraian.includes("setiap saat"))
+    return "Informasi yang harus disediakan dan diumumkan setiap saat.";
+  if (uraian.includes("dikecualikan"))
+    return "Daftar informasi yang dikecualikan dari keterbukaan informasi publik.";
+  if (uraian.includes("komitmen"))
+    return "Aspek yang menunjukkan komitmen organisasi terhadap keterbukaan informasi.";
+  if (uraian.includes("digitalisasi"))
+    return "Inisiatif digitalisasi dalam pengelolaan dan penyebarluasan informasi publik.";
+  return "";
+};
 </script>
+
+<style scoped>
+div:hover {
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+</style>

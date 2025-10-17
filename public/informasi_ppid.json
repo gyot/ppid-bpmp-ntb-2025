@@ -1,0 +1,47 @@
+[
+  {
+    "Uraian": "Informasi Wajib Berkala",
+    "Items": [
+      { "Informasi": "Profil", "Link": "" },
+      { "Informasi": "LHKPN", "Link": "https://drive.google.com/file/d/1zbOecNB3d-wXKRMHqCmhX_p4RRoKa8ee/view?usp=drive_link" },
+      { "Informasi": "Informasi Program", "Link": "" },
+      { "Informasi": "Agenda Penting", "Link": "" },
+      { "Informasi": "Ringkasan CALK", "Link": "https://drive.google.com/file/d/1F9LayKohugDti5_aSlYyl-LzdJqck9SU/view?usp=drive_link" },
+      { "Informasi": "RKA", "Link": "https://drive.google.com/file/d/1lcWdSnEM5m1K6vvzrBLhFiSLKf9K2E95/view" },
+      { "Informasi": "DIPA", "Link": "https://drive.google.com/file/d/1xp9Pp9Va1JYFKriOoxyC7t24n7QwZA75/view?usp=drive_link" },
+      { "Informasi": "Ringkasan laporan akses layanan informasi publik", "Link": "https://drive.google.com/file/d/1i1AdvrYWMad7AxOtFIsww4x6XyB3l_yy/view?usp=drive_link" },
+      { "Informasi": "Tata cara pengajuan keberatan atas informasi publik", "Link": "Tautkan Google form pengajuan permohonan informasi dan keberatan atas informasi publik" },
+      { "Informasi": "Informasi Pengadaan barang dan jasa", "Link": "https://sirup.lkpp.go.id/sirup/home/penyediaSatker?idSatker=385951" },
+      { "Informasi": "Rencana Umum Pengadaan", "Link": "https://docs.google.com/document/d/1A72mImx_PABtnvC-dNKAwaMHRpES8vbH/edit?usp=drive_link&ouid=102433604363655742130&rtpof=true&sd=true" },
+      { "Informasi": "Dokumen Pengadaan", "Link": "https://drive.google.com/drive/folders/1oCuryQy1RwAUiooxInUisNxHjanGV2u7?usp=drive_link" }
+    ]
+  },
+  {
+    "Uraian": "Informasi tersedia setiap saat",
+    "Items": [
+      { "Informasi": "Permendikbud no. 11 tahun 2022", "Link": "https://drive.google.com/file/d/14RTD_iIeuBrfl2EuOVWvWk9O_-OrEuVd/view?usp=drive_link" },
+      { "Informasi": "Data perbendaharaan", "Link": "https://drive.google.com/file/d/1bYSYYE1kjB1gO3u7w962CYZ4K2j9ASwx/view?usp=drive_link" },
+      { "Informasi": "", "Link": "https://drive.google.com/file/d/1RH2sIewEoYGDGkXrSnc2wF_DpGFX2eQA/view?usp=drive_link" },
+      { "Informasi": "Data BMN", "Link": "https://drive.google.com/drive/folders/10wapEhXHLdeQU9Lb_o43u5bC30o8IptA" },
+      { "Informasi": "Agenda kerja pimpinan", "Link": "https://drive.google.com/drive/folders/1JGFKXJFYLIkXSlrhuTLHG0KD_zUEisM5?usp=drive_link" }
+      ,{ "Informasi": "Facebook BPMP Provinsi NTB", "Link": "https://www.facebook.com/bpmpntb" },
+      { "Informasi": "Instagram BPMP Provinsi NTB", "Link": "https://www.instagram.com/bpmpntb/" },
+      { "Informasi": "YouTube BPMP Provinsi NTB", "Link": "https://www.youtube.com/@bpmp_ntb" },
+      { "Informasi": "Website Resmi BPMP Provinsi NTB", "Link": "https://bpmpntb.kemendikdasmen.go.id/" }
+    ]
+  },
+  {
+    "Uraian": "Aspek komitmen organisasi",
+    "Items": [
+      { "Informasi": "SK PPID", "Link": "https://drive.google.com/file/d/1gon7Sg_JjFjBxpmQ_775h63tqAcaB0fW/view?usp=drive_link" },
+      { "Informasi": "Pedoman pelaksanaan keterbukaan informasi publik", "Link": "https://drive.google.com/file/d/1jcM2hPQI-myv2NGbGwkQEDHgKXncWOnr/view?usp=drive_link" },
+      { "Informasi": "POS", "Link": "https://drive.google.com/file/d/1GFoZ06rAgdLFH5T9MFb2jWE6PYegJJra/view?usp=drive_link" }
+    ]
+  },
+  {
+    "Uraian": "Aspek digitalisasi",
+    "Items": [
+      { "Informasi": "Satu data", "Link": "belum aktif, tolong diaktifkan" }
+    ]
+  }
+]

@@ -12,12 +12,12 @@
                 <h3>Tentang Saya</h3>
                 <ul>
                     <li>Nama: <b>Katman, S.Pd., M.A</b></li>
-                    <li>Pangkat/Golongan: <b>Pembina / IVa</b></li>
+                    <li>Pangkat/Golongan: <b>Pembina Tk.I IV/b</b></li>
                     <li>Jabatan: <b>Kepala BPMP Provinsi NTB</b></li>
-                    <li>TMT Jabatan: <b>16 November 2023</b></li>
+                    <li>TMT Jabatan: <b>6 Desember 2023</b></li>
                     <li>Jenis Kelamin: <b>Laki-laki</b></li>
                     <li>Agama: <b>Islam</b></li>
-                    <li>Eselon: <b>IVb</b></li>
+                    <li>Eselon: <b>IVa</b></li>
                 </ul>
                 <p>Menjabat Kepala Balai Penjaminan Mutu Pendidikan (BPMP) Provinsi NTB sejak 16 November 2023.</p>
 
